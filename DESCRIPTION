@@ -1,0 +1,19 @@
+Package: webvitals
+Type: Package
+Title: Measure Shiny Apps Performance using the Google Core Web Vitals
+Version: 0.1.0
+Authors@R: c(
+    person("Mohamed El Fodil", "Ihaddaden", email = "ihaddaden.fodeil@gmail.com", role = c("aut", "cre")),
+    person("Google", role = c("ctb", "cph"), comment = "developers of the web-vitals JS library")) 
+Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
+Description: Measure 'Google Core Web Vitals' using the 'web-vitals' 'JavaScript' library in 'Shiny'.   
+    The packages allows 'Shiny' developers to easily measure their app performance using the well-known
+    'Google Core Web Vitals' values. Using the package, one is able to log the values within the 'console' and get 
+    the values back within the 'Shiny' server.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    glue,
+    htmltools
