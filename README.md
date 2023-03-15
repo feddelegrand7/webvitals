@@ -3,7 +3,6 @@
 
 <!-- badges: start -->
 [![](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/webvitals)
-badger::badge_lifecycle()
 <!-- badges: end -->
 
 The goal of `webvitals` is to provide the following metrics which can be used to monitor a Shiny app's performance:
