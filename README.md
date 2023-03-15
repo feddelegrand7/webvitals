@@ -41,7 +41,7 @@ ui <- shiny::fluidPage(
     FID_id = "fid",
     LCP_id = "lcp",
     CLS_id = "cls",
-    wait_to_get_info = 10000 # give your time to your app to collect the metrics
+    wait_to_get_info = 10000 # give time to your app to collect the metrics
   ),
 
   shiny::h1("The title, the amazing title"),
