@@ -29,7 +29,7 @@ check_for_input <- function(x) {
 #' @param FID_id the ID of the FID value that will be collected
 #' @param LCP_id the ID of the LCP value that will be collected
 #' @param CLS_id the ID of the CLS value that will be collected
-#' @param wait_to_get_info how long (in milliseconds) do you want to wait before collecting the web-vitals metrics.
+#' @param wait_to_get_info how long (in milliseconds) do you want to wait before collecting the web-vitals metrics. Defaults to 6000ms
 #'
 #' @return called for the side effect of using the web-vitals JS library.
 #' @export
@@ -80,6 +80,8 @@ implement_webvitals <- function(FID_id, LCP_id, CLS_id, wait_to_get_info = 60000
       Shiny.setInputValue('<<<<FID_id>>>>', FID_storage[idx_FID]);
       Shiny.setInputValue('<<<<LCP_id>>>>', LCP_storage[idx_LCP]);
       Shiny.setInputValue('<<<<CLS_id>>>>', CLS_storage[idx_CLS]);
+
+    console.log('function is being run');
   };
 
   setTimeout(set_shinyInput_webvitals, <<<<wait_to_get_info>>>>, webvitals_r_console_storage_FID, webvitals_r_console_storage_LCP, webvitals_r_console_storage_CLS);

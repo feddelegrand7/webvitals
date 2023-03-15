@@ -13,7 +13,7 @@ implement_webvitals(FID_id, LCP_id, CLS_id, wait_to_get_info = 60000)
 
 \item{CLS_id}{the ID of the CLS value that will be collected}
 
-\item{wait_to_get_info}{how long (in milliseconds) do you want to wait before collecting the web-vitals metrics.}
+\item{wait_to_get_info}{how long (in milliseconds) do you want to wait before collecting the web-vitals metrics. Defaults to 6000ms}
 }
 \value{
 called for the side effect of using the web-vitals JS library.
